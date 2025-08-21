@@ -1,0 +1,235 @@
+@font-face {
+  font-family: "Runic";
+  src: url(../fonts/ModranihtRunic.ttf);
+}
+
+p {
+  text-align: justify;
+}
+
+h2 {
+  padding-bottom: 40px;
+  color: #751313;
+}
+
+h4,
+h5 {
+  color: #751313;
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+#wrapper {
+  max-width: 2160px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.navbar {
+  background-color: #f3f3f3;
+  padding: 5px 25px;
+  margin: 0px;
+}
+
+.navbar .navbar-brand {
+  height: 50px;
+}
+
+.runic {
+  font-family: "Runic";
+}
+
+.index-intro {
+  width: 100%;
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0px;
+}
+
+.index-intro .jumbotron {
+  padding: 240px 25px;
+  margin: 0px;
+  background-color: #9b9b9b00; /* transparent */
+}
+
+.index-intro .jumbotron .inner-border {
+  padding: 15px 25px;
+  border-left: solid;
+  border-width: 5px;
+  color: #d6d6d6;
+  border-color: #4d0a0a;
+  background-color: #5f36368e;
+}
+
+.sub-title {
+  text-align: center;
+}
+
+.content-box {
+  background-color: #f3f3f3;
+  width: 100%;
+  padding: 40px 25px 25px;
+  color: #534b4f;
+}
+
+.content-box-2 {
+  background-color: #f3f3f3;
+  width: 100%;
+  padding: 0px 25px;
+  color: #534b4f;
+}
+
+.author-name {
+  font-size: 14px;
+}
+
+.content-card {
+  padding: 15px 25px;
+  border-left: solid;
+  border-width: 5px;
+  border-color: #751313;
+  background-color: #d6d6d6;
+  margin-bottom: 25px;
+  height: 100%;
+}
+
+.book {
+  width: 100%;
+}
+
+.btn {
+  margin-top: 5px;
+  width: 100%;
+  background-color: #751313;
+  color: #d6d6d6;
+}
+
+.btn:hover {
+  background-color: #c25f5f;
+}
+
+.title-extra-padding {
+  text-align: center;
+  padding: 20px;
+}
+
+.foot-extra {
+  text-align: center;
+  padding: 30px;
+}
+
+.footer-container {
+  color: #534b4f;
+  background-color: #d6d6d6;
+  width: 100%;
+  padding: 25px 35px 10px;
+}
+
+.logo {
+  border-radius: 50px;
+  width: 75px;
+}
+
+.logo-row {
+  justify-content: center;
+}
+
+.logo-card {
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.footer-content .title-extra-padding {
+  text-align: center;
+}
+
+.copyright {
+  padding-top: 35px;
+  text-align: center;
+}
+
+/* Mythos */
+.carousel-item {
+  max-height: 798px;
+}
+
+.story-title {
+  color: #751313;
+  font-size: 50px;
+}
+
+p.story {
+  font-size: large;
+}
+
+/* Contact Us */
+.contact-us-box {
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 50px 0px 50px 0px;
+  color: #534b4f;
+}
+
+.contact-us-card {
+  padding: 11px 25px;
+  border-left: solid;
+  border-width: 5px;
+  color: #d6d6d6;
+  border-color: #4d0a0a;
+  background-color: #5f36368e;
+}
+.contact-us-box .row {
+  justify-content: center;
+}
+
+#message {
+  width: 100%;
+  resize: none;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.half {
+  width: 49%;
+}
+
+/* ===== Responsive enhancements ===== */
+
+/* Cards fill height nicely */
+.content-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Full-width buttons when narrow (if not using .btn-block) */
+@media (max-width: 900px) {
+  .btn {
+    width: 100%;
+  }
+}
+
+/* Hero padding scales better on small screens */
+.index-intro .jumbotron {
+  padding: clamp(120px, 20vh, 240px) 25px;
+}
+
+/* Keep long paragraphs readable */
+p {
+  hyphens: auto;
+  overflow-wrap: anywhere;
+}
+
+/* Ensure legacy .half blocks stack when needed */
+@media (max-width: 900px) {
+  .half {
+    width: 100%;
+    display: block;
+  }
+}

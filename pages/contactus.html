@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midgard Thunder Chasers</title>
+    <!--Links required for bootstrap-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="shortcut icon" href="../images/tab-logo.ico">
+    <script src="../js/jquery.min.js" ></script> <!--bootstrap requirement-->
+    <script src="../js/popper.min.js" ></script> <!--bootstrap requirement-->
+    <script src="../js/bootstrap.min.js" ></script> 
+    <script src="../js/main.js"></script> 
+</head>
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <img class="navbar-brand" alt="Navigation Logo" src="../images/logo.jpg"> <!-- Logo -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> <!-- Adds hamburger menu when size goes down -->
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mythos.html">Mythos</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <article class="contact-us-box">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="contact-us-card">
+                            <h1 class="sub-title runic">Contact Us!</h1>
+                            <br/>
+                            <form name="contactusform">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="name" placeholder="Full Name*">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="email" placeholder="Email*">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="number" placeholder="Mobile Number* ie... 12345678">
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="message" name="messagearea" rows="15" placeholder="Message*"></textarea>
+                                </div>
+                                <button onclick="validateForm()" type="submit" class="btn half">Submit Form</button>
+                                <a href="mailto:axel.tabone.e25582@mcast.edu.mt?subject=Midgard%20Thunder%20Chasers%20-%20Submission." class="btn half">Send an email
+                                </a> <!-- Emails to my School Email -->
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <footer class="footer-container">
+            <div class="footer-content">
+                <h5 class="foot-extra">~ Channels featuring Norse mythology ~</h5>
+                <div class="row logo-row">
+                    <div class="col-sm-2">
+                        <div class="logo-card">
+                            <a href="https://www.youtube.com/channel/UCH4Bz5Swatl5iHSuCT_Hlxg" target="_blank"><img class="logo" alt="Mythology And Fiction Explained YouTube Channel Profile" src="../images/mythologyandfictionexplained.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="logo-card">
+                            <a href="https://www.youtube.com/channel/UC9u3UqkoikJ9Nr8t4wvyNRQ" target="_blank"><img class="logo" alt="See U in History / Mythology YouTube Channel Profile" src="../images/seeuinihistoryandmythology.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="logo-card">
+                            <a href="https://www.youtube.com/channel/UCXCxNFxw6iq-Mh4uIjYvufg" target="_blank"><img class="logo" alt="Jackson Crawford YouTube Channel Profile" src="../images/jacksoncrawford.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h6>About Us</h6>
+                        <p><i>“On the crest of a hill, under an inky black sky, Valhalla stands in all her splendour. Spears hold up a roof made from battle-worn shields. They're scratched and gouged, blood glistening in nicks and groves. Magic makes the impossible, possible. The Hall of the Slain. Gloriously strange and macabre.” ― Michelle Connor, Where Ravens Soar</i></p>
+                    </div>
+                    <div class="col-sm-4 about"></div> <!-- Acts as padding in this case -->
+                    <div class="col-sm-2">
+                        <h6>Quick Links</h6>
+                        <ul class="navbar-nav mr-auto">
+                            <li>
+                                <a href="../index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="mythos.html">Mythos</a>
+                            </li>
+                            <li>
+                                <a href="contactus.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                        <h6>Honorary Channels</h6>
+                        <ul class="navbar-nav mr-auto">
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCLTQVYwu-M-MnfOJDKlFnOQ" target="_blank">Danheim (Music)</a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCt5NBW-Fqv72V55KhuTgkLg" target="_blank">Herknungr (Music)</a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCMuoEN_e9IB0pjtEgPQYCSA/videos" target="_blank">The Wisdom Of Odin (Religion)</a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UC7SVyZzET7yld7kxbaUdPiw" target="_blank">Skjalden (Lore)</a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/user/SkallagrimNilsson" target="_blank">Skallagrim (HEMA)</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <h6 class="copyright"><b>@ 2021 Designed & Developed:</b> Axel Tabone</h6>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
